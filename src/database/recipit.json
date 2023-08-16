@@ -1,10 +1,10 @@
 [
     {
-        "nama_pembeli": "Dewa",
+        "nama_pembeli": "d",
         "nama_makanan": "pisang goreng",
         "satuan": "paket",
         "harga": "13000",
-        "total_qty": "3",
-        "total_harga": 39000
+        "total_qty": "2",
+        "total_harga": 26000
     }
 ]

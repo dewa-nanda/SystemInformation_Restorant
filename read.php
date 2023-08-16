@@ -34,7 +34,7 @@
                     </tr>
 
                     <?php
-                        $file_json = file_get_contents('dbmakanan.json');
+                        $file_json = file_get_contents('./src/database/dbmakanan.json');
                         $data_makanan = json_decode($file_json, true);
                         // <td><a href="order.php?nama = $value['nama_makanan]">Pesan</a></td>
                         foreach ($data_makanan as $key => $value){

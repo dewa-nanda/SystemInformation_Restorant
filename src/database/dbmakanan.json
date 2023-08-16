@@ -13,5 +13,10 @@
         "nama_makanan": "tempe goreng",
         "harga": 13000,
         "satuan": "paket"
+    },
+    {
+        "nama_makanan": "2",
+        "harga": "2",
+        "satuan": "2"
     }
 ]

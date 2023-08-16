@@ -37,21 +37,27 @@
                 <form method="post" action="">
                     <table>
                         <tr>
+                            <td>Nama pemesan</td>
+                            <td>
+                                <input type="text" name="nama_pemesan" id="nama_pemesan">
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Nama makanan</td>
                             <td>
-                                <input type="text" name="makanan" id="makanan" value="<?php echo $makanan?>">
+                                <input type="text" name="makanan" id="makanan" value="<?php echo $makanan?>" disabled>
                             </td>
                         </tr>
                         <tr>
                             <td>satuan</td>
                             <td>
-                                <input type="text" name="satuan" id="satuan" value="<?php echo $satuan?>">
+                                <input type="text" name="satuan" id="satuan" value="<?php echo $satuan?>" disabled>
                             </td>
                         </tr>
                         <tr>
                             <td>harga</td>
                             <td>
-                                <input type="number" name="harga" id="harga" value="<?php echo $harga?>">
+                                <input type="number" name="harga" id="harga" value="<?php echo $harga?>" disabled>
                             </td>
                         </tr>
                         <tr>
@@ -60,20 +66,6 @@
                                 <input type="number" name="qty" id="qty">
                             </td>
                         </tr>
-                        
-                        
-                        <!-- <tr>
-                            <td>Satuan</td>
-                            <td><?php echo $satuan?></td>
-                        </tr>
-                        <tr>
-                            <td>Harga</td>
-                            <td><?php echo $harga?></td>
-                        </tr>
-                        <tr>
-                            <td>Qty</td>
-                            <td><input type="number" name="qty" id="qty"></td>
-                        </tr> -->
                     </table>
                     <button type="submit">Order</button>
                 </form>
@@ -85,12 +77,13 @@
         </footer>
         <?php
             if(@($_POST)){
-                $path = 'new.json';
+                $path = './src/database/recipit.json';
+                $nama_pemesan = $_POST['nama_pemesan'];
                 $qty = $_POST['qty'];
                 $total = perhitungan($qty, $harga);
                 $jsonData = [
                     [
-                        "nama_pembeli" => "Dewa",
+                        "nama_pembeli" => $nama_pemesan,
                         "nama_makanan" => $makanan,
                         "satuan" => $satuan,
                         "harga" => $harga,
@@ -103,7 +96,7 @@
                 fwrite($fp, $jsonString);
                 fclose($fp);
 
-                header("Location: index.php");
+                header("Location: transaksi.php");
             }
         ?>
     </body>

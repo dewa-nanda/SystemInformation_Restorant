@@ -45,7 +45,7 @@
             </div>
             <?php
                 if(@($_POST)){
-                    $file_json = file_get_contents('dbmakanan.json');
+                    $file_json = file_get_contents('./src/database/dbmakanan.json');
                     $data_makanan = json_decode($file_json, true);
 
 
@@ -64,7 +64,7 @@
                     ];
 
                     $new_makanan = json_encode($_data_makanan, JSON_PRETTY_PRINT);
-                    $file = fopen('dbmakanan.json', 'w');
+                    $file = fopen('./src/database/dbmakanan.json', 'w');
                     fwrite($file, $new_makanan);
                     fclose($file);
                     header("Location: read.php");
