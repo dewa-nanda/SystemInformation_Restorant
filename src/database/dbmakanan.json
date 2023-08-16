@@ -1,0 +1,17 @@
+[
+    {
+        "nama_makanan": "pisang goreng",
+        "harga": 13000,
+        "satuan": "paket"
+    },
+    {
+        "nama_makanan": "nasi goreng",
+        "harga": 13000,
+        "satuan": "paket"
+    },
+    {
+        "nama_makanan": "tempe goreng",
+        "harga": 13000,
+        "satuan": "paket"
+    }
+]
