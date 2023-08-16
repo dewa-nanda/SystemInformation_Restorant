@@ -34,7 +34,10 @@
 
         <main>
             <div class="main-content">
-                <H1>Detail Pesanan</H1>
+                <div class="title-content">
+                    <H1>Detail Pesanan</H1>
+                    <p>Berikut merupakan detail pesanan, sesuai dengan anda inputkan sebelumnya</p>
+                </div>
                 <div class="detail-content">
                     <?php
                         foreach ($jsonData as $key => $value){

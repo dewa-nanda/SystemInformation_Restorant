@@ -15,18 +15,18 @@
         "satuan": "paket"
     },
     {
-        "nama_makanan": "2",
-        "harga": "2",
-        "satuan": "2"
+        "nama_makanan": "awan goreng",
+        "harga": "29999",
+        "satuan": "lusin"
     },
     {
-        "nama_makanan": "",
-        "harga": "",
-        "satuan": ""
+        "nama_makanan": "awan goreng",
+        "harga": "29999",
+        "satuan": "lusin"
     },
     {
-        "nama_makanan": "",
-        "harga": "",
-        "satuan": ""
+        "nama_makanan": "test",
+        "harga": "1234",
+        "satuan": "test"
     }
 ]

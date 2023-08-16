@@ -1,9 +1,9 @@
 [
     {
-        "nama_makanan": "tempe goreng",
-        "harga": "13000",
-        "satuan": "paket",
+        "nama_makanan": "test",
+        "harga": "1234",
+        "satuan": "test",
         "nama_pembeli": "Dewa",
-        "total_qty": "21"
+        "total_qty": "34"
     }
 ]

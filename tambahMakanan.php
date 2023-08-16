@@ -68,7 +68,7 @@
                     $file = fopen('./src/database/dbmakanan.json', 'w');
                     fwrite($file, $new_makanan);
                     fclose($file);
-                    header("Location: read.php");
+                    header("Location: menu.php");
                     
                     // $makanan = $_POST['nama'];
                     // $harga = $_POST['harga'];
