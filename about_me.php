@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,15 +34,28 @@
                     <div class="heading">
                         <h1>Dewa Putra Hernanda</h1>
                         <div class="social-media">
-                            <a><i class="fa-brands fa-github"></i></a>
-                            <a><i class="fa-brands fa-instagram" style="color: #f00f92;"></i></a>
-                            <a><i class="fa-brands fa-linkedin" style="color: #005af5;"></i></a>
+                            <a href="https://github.com/dewaNandaX" target="_blank" style="color:black"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/dewa_ndn/" target="_blank"><i class="fa-brands fa-instagram" style="color: #f00f92;"></i></a>
+                            <a href="https://www.linkedin.com/in/dewa-putra-hernanda-147a99202/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #005af5;"></i></a>
                         </div>
                     </div>
                     <div class="main">
-                        <p>Undergraduate student at University of Ahmad Dahlan, focusing about front-end web and machine learning developer</p>
+                        <p>Undergraduate student at University of Ahmad Dahlan, now i focusing on front-end web and machine learning developer</p>
+                        <a href="#changlog"><button>Changelog on this project</button></a>
                     </div>
-                    
+                </div>
+            </div>
+
+            <div class="container-changelog" id="changlog">
+                <div class="section">
+                    <h2>Changelog Project Restorant</h2>
+                    <?php
+                        $readme = fopen('./src/readme/readme.txt', 'r');
+                        while(!feof($readme)) {
+                            echo '<p>'.fgets($readme) . "</p>";
+                        }
+                        fclose($readme);
+                    ?>
                 </div>
             </div>
         </main>

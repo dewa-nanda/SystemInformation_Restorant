@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #F8F0E5;
     height: 100vh;
@@ -46,13 +50,13 @@ header nav ul a{
 
 /* main */
 main {
-    display: flex;
     min-height: 90vh;
 }
 
 .container {
     display: flex;
-    border: 1px solid black;
+    
+    height: 100%;
     width: 80%;
     margin: 0 auto;
 }
@@ -68,10 +72,7 @@ main {
 
 .container-detail{
     width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: auto 0;
 }
 
 .container-detail .heading .social-media{
@@ -81,9 +82,47 @@ main {
     padding: 5px;
     width: 50%;
     font-size: 25px;
+    
 }
 .container-detail .heading .social-media a{
     margin-right: 5px;
+}
+
+.container-detail .main a{
+    border: 1px solid #102C57;
+    background-color: #102C57;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container-detail .main a button{
+    color: #DAC0A3;
+    background-color: #102C57;
+    border: 1px solid #102C57;
+}
+
+.container-detail .main p{
+    margin-bottom: 15px;
+}
+
+.container-changelog{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50%;
+    margin: 0 auto;
+}
+.section h2{
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
 }
 /* footer */
 
