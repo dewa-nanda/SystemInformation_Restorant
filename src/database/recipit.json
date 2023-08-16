@@ -1,9 +1,9 @@
 [
     {
-        "nama_makanan": "pisang goreng",
+        "nama_makanan": "tempe goreng",
         "harga": "13000",
         "satuan": "paket",
-        "nama_pembeli": "23",
-        "total_qty": "12"
+        "nama_pembeli": "Dewa",
+        "total_qty": "21"
     }
 ]

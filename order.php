@@ -1,7 +1,4 @@
 <?php 
-    // echo '<pre>';
-    // print_r($_GET);
-    // echo '</pre>';
     include './src/function/perhitungan.php';
     $makanan = $_GET['nama'];
     $harga = $_GET['harga'];
@@ -14,7 +11,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Order</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/order.css"/>
     </head>
     <body>
 
@@ -25,8 +22,9 @@
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="tambahData.php">Tambah Makanan</a></li>
-                    <li><a href="read.php">Info Makanan</a></li>
+                    <li><a href="tambahMakanan.php">Tambah Menu</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="about_me.php">About me</a></li>
                 </ul>
             </nav>
         </header>
@@ -67,7 +65,9 @@
                             </td>
                         </tr>
                     </table>
-                    <button type="submit">Order</button>
+                    <div class="container_btn">
+                        <button type="submit">Order</button>
+                    </div>
                 </form>
             </div>
         </main>
