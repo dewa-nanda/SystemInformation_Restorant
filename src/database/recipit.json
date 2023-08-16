@@ -1,10 +1,9 @@
 [
     {
-        "nama_pembeli": "d",
         "nama_makanan": "pisang goreng",
-        "satuan": "paket",
         "harga": "13000",
-        "total_qty": "2",
-        "total_harga": 26000
+        "satuan": "paket",
+        "nama_pembeli": "23",
+        "total_qty": "12"
     }
 ]

@@ -1,8 +1,12 @@
 <?php
-    $path = 'new.json';
+    include './src/function/perhitungan.php';
+
+    $path = './src/database/recipit.json';
     $jsonString = file_get_contents($path);
     $jsonData = json_decode($jsonString, true);
     var_dump($jsonData);
+
+    $total_transaksi = perhitungan($jsonData[0]['total_qty'], $jsonData[0]['harga'] )
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +14,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Last Project</title>
+        <title>Recipit</title>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
@@ -30,7 +34,17 @@
 
         <main>
             <div class="main-content">
-                <H1>Selamat Datang di Aplikasi Restoran KET</H1>
+                <H1>Detail pesanan</H1>
+                <?php
+                    foreach ($jsonData as $key => $value){
+                        echo "<p>" . $value['nama_makanan'] . "</p>";
+                        echo "<p>" . $value['satuan'] . "</p>";
+                        echo "<p>" . $value['harga'] . "</p>";
+                        echo "<p>" . $value['nama_pembeli'] . "</p>";
+                        echo "<p>" . $total_transaksi . "</p>";
+                    }
+                
+                ?>
             </div>
         </main>
 

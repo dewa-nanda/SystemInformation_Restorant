@@ -18,5 +18,15 @@
         "nama_makanan": "2",
         "harga": "2",
         "satuan": "2"
+    },
+    {
+        "nama_makanan": "",
+        "harga": "",
+        "satuan": ""
+    },
+    {
+        "nama_makanan": "",
+        "harga": "",
+        "satuan": ""
     }
 ]

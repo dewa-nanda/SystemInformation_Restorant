@@ -83,12 +83,11 @@
                 $total = perhitungan($qty, $harga);
                 $jsonData = [
                     [
-                        "nama_pembeli" => $nama_pemesan,
                         "nama_makanan" => $makanan,
-                        "satuan" => $satuan,
                         "harga" => $harga,
-                        "total_qty" => $qty,
-                        "total_harga" => $total
+                        "satuan" => $satuan,
+                        "nama_pembeli" => $nama_pemesan,
+                        "total_qty" => $qty
                     ]
                 ];
                 $jsonString = json_encode($jsonData, JSON_PRETTY_PRINT);
